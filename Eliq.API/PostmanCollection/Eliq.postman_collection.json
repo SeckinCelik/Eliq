@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "dded3c99-4a13-4b8a-95f8-6966dd0ec83e",
+		"name": "Eliq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44333/eliq/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"eliq",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Players",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NFXxiZFpqCZxF2pROgMyr58lfTG2fvfdbmMKwBAsHiF1P5F1FVvg9dGyFwkZJuiwIcCavwQ7nuseG-O1K7Q_dYbA9r-q0ImrM5uSD-ujonq3EvXfBhciBS2M2WGcp4H_mplbsKtMsxHjKOjdfiCSgh6hFcEjNZFSAznrvADwgkG2poGVVa5-1otJV0ELmKg-6Baw184ddXbCLB5QUPZLFEI8_3mppTHgmRCeBjX_1h2-h19ZEjV9LVetx7CZi4qae4POGo5SXcl2aI5_ceuWZuGUb1RRPbJqXsXpYHREczdbLhezTW4-Zif_WQXodzre",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/api/player/index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"player",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Games",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NFXxiZFpqCZxF2pROgMyr58lfTG2fvfdbmMKwBAsHiF1P5F1FVvg9dGyFwkZJuiwIcCavwQ7nuseG-O1K7Q_dYbA9r-q0ImrM5uSD-ujonq3EvXfBhciBS2M2WGcp4H_mplbsKtMsxHjKOjdfiCSgh6hFcEjNZFSAznrvADwgkG2poGVVa5-1otJV0ELmKg-6Baw184ddXbCLB5QUPZLFEI8_3mppTHgmRCeBjX_1h2-h19ZEjV9LVetx7CZi4qae4POGo5SXcl2aI5_ceuWZuGUb1RRPbJqXsXpYHREczdbLhezTW4-Zif_WQXodzre",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/api/game/getallgames?cominggames=false",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"game",
+						"getallgames"
+					],
+					"query": [
+						{
+							"key": "cominggames",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1GMAHwrIQoHWFOhz0PndxxU3deNgfsL7DPzp6cTVL_cTqJpVHEvmkfHlV3Gb_D8fvMp5Ko3HFsq8yv5Cu6BJPayMrJzoz3uhNhFeQlQdXKpaATqJZZLuYUHCDMte_fPzhqZCJC2Rm8fRsKX1q9gJlyJM3GkQL18N3FcJJEB9bHh0a4Ru5jviAKQUx-kz7qLI0BBKGS4vbrhFvcVPdOMDax_MWNMSY3jyy2SpDt20qwJSxPC8pwK0Rr7wKkay5la8CzP7oRYRoHy9vmc1iRdP8C4huSrQ92PoyLu0Gf1DHA09zulTRXETEEMN2or9bWqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44333/api/player/delete/?playerid=c7feebef-34f0-43f7-8b0f-4a7c37be78ae",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"player",
+						"delete",
+						""
+					],
+					"query": [
+						{
+							"key": "playerid",
+							"value": "c7feebef-34f0-43f7-8b0f-4a7c37be78ae"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Player",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NFXxiZFpqCZxF2pROgMyr58lfTG2fvfdbmMKwBAsHiF1P5F1FVvg9dGyFwkZJuiwIcCavwQ7nuseG-O1K7Q_dYbA9r-q0ImrM5uSD-ujonq3EvXfBhciBS2M2WGcp4H_mplbsKtMsxHjKOjdfiCSgh6hFcEjNZFSAznrvADwgkG2poGVVa5-1otJV0ELmKg-6Baw184ddXbCLB5QUPZLFEI8_3mppTHgmRCeBjX_1h2-h19ZEjV9LVetx7CZi4qae4POGo5SXcl2aI5_ceuWZuGUb1RRPbJqXsXpYHREczdbLhezTW4-Zif_WQXodzre",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44333/api/player/index",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"player",
+						"index"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

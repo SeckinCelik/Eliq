@@ -1,0 +1,26 @@
+[
+  {
+    "id": "7deb8d60-790e-4dda-8a23-e0ee22399359",
+    "home_team_id": "99990b75-dea5-4e1a-95fd-4ea4ee82e87c",
+    "away_team_id": "12cfddc9-2fc0-4e15-b7b9-6a2bd6fa14de",
+    "game_date": "2022-12-20",
+    "home_team_score": 1,
+    "away_team_score": 1
+  },
+  {
+    "id": "d036d293-6265-49fe-a530-29c658b83397",
+    "home_team_id": "99990b75-dea5-4e1a-95fd-4ea4ee82e87c",
+    "away_team_id": "e5a24625-7ad5-48af-8bcf-6f846628cd66",
+    "game_date": "2021-01-20",
+    "home_team_score": 2,
+    "away_team_score": 2
+  },
+  {
+    "id": "acdda3fa-d7dd-434b-a1ba-eb5b20cc4f7e",
+    "home_team_id": "99990b75-dea5-4e1a-95fd-4ea4ee82e87c",
+    "away_team_id": "779403ba-ec0d-4f12-995c-2dc7bac57f58",
+    "game_date": "2020-11-13",
+    "home_team_score": 3,
+    "away_team_score": 3
+  }
+]

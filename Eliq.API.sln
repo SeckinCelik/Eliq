@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eliq.API", "Eliq.API\Eliq.API.csproj", "{59C58B55-7FA9-4674-BC1A-8CD27A6ADEDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eliq.BL", "Eliq.BL\Eliq.BL.csproj", "{5698D2C9-C835-4E34-95F8-6016720E9958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59C58B55-7FA9-4674-BC1A-8CD27A6ADEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C58B55-7FA9-4674-BC1A-8CD27A6ADEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C58B55-7FA9-4674-BC1A-8CD27A6ADEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C58B55-7FA9-4674-BC1A-8CD27A6ADEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5698D2C9-C835-4E34-95F8-6016720E9958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5698D2C9-C835-4E34-95F8-6016720E9958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5698D2C9-C835-4E34-95F8-6016720E9958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5698D2C9-C835-4E34-95F8-6016720E9958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1B6790B-11A0-41B5-A834-5802626A6790}
+	EndGlobalSection
+EndGlobal
